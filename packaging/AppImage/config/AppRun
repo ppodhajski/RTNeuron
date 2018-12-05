@@ -1,0 +1,6 @@
+#!/bin/bash
+
+HERE="$(dirname "$(readlink -f "${0}")")"
+
+LD_LIBRARY_PATH=${HERE}/usr/local/lib:${HERE}/usr/local/lib64:${HERE}/usr/local/lib/python3.7/site-packages/PyQt5/Qt/lib:$LD_LIBRARY_PATH PYTHONHOME=${HERE}/usr/local PYTHONPATH=${HERE}/usr/local/lib/python3.7/site-packages   ${HERE}/usr/local/bin/python3.7 ${HERE}/usr/local/bin/rtneuron $@
+

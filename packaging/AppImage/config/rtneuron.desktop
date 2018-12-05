@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+#Exec=env 
+#Exec= env PYTHONHOME=./usr/local env PYTHONPATH=./usr/local/lib/python3.7/site-packages   python3.7 usr/local/bin/rtneuron
+Exec=bash start.sh
+
+#Exec=env PYTHONPATH=usr/local/lib/python3.7/site-packages virt/bin/python3 usr/local/bin/rtneuron 
+Name=rtneuron
+Comment=ddd
+Categories=GTK;
+Icon=rtneuron
